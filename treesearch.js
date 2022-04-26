@@ -3,20 +3,21 @@ const breadthfirst = (node, element) => {
   parent = node.parent;
   siblings = parent.children;
   // base case is that the element is present on the node
-  if (Object.hasOwn(node, element)) return "found";
+  if (node.element) return "found";
   // assume the node being sent in is the root and search from there
   // breadth first search all immediate children of the given node
   // take the children and add them to search list
-  //
+  // 
   searchlist = children;
   //
 };
 
 treeroot = {
   "children": [],
-  "element": null,
+  "element": true,
   "parent": null
 }
 
 
-console.log(searchlistbreadthfirst(treeroot));
+
+console.log(searchlistbreadthfirst(treeroot)); // should return found
