@@ -11,12 +11,20 @@ const breadthfirst = (node, element) => {
   searchlist = children;
   //
 };
+// example child of treeroot
+treenode = {
+  "children":["alice", "billy", "gregory", "arnold", "melanie"],
+  "element": "false",
+  "parent": "treeroot"
+}
 
 treeroot = {
   "children": [],
   "element": true,
   "parent": null
 }
+
+
 
 
 
