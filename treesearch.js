@@ -17,9 +17,9 @@ treenode = {
   "element": "false",
   "parent": "treeroot"
 }
-
+// root of a tree
 treeroot = {
-  "children": [],
+  "children": ["Johnothan", "Khayo", "simple questions", "Llort"],
   "element": true,
   "parent": null
 }
