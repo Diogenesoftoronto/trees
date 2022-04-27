@@ -1,4 +1,4 @@
-const breadthfirst = (node, element) => {
+const breadthfirst = (node) => {
   children = node.children;
   parent = node.parent;
   siblings = parent.children;
@@ -8,9 +8,10 @@ const breadthfirst = (node, element) => {
   // breadth first search all immediate children of the given node
   // siblings and children are arrays
   // push all the elements in the siblings array into the searching array
+  searching.concat(siblings)
   // visit the siblings by passing the sibling node into the function but before that pop it out of the array of siblings
-  siblingBeingSearched = siblings.pop()
-  return 
+  siblingBeingSearched = searching.pop()
+  return breadthfirst(siblingBeingSearched)
 
 };
 alice = {
