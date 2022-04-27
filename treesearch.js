@@ -9,7 +9,8 @@ const breadthfirst = (node, element) => {
   // siblings and children are arrays
   // push all the elements in the siblings array into the searching array
   // visit the siblings by passing the sibling node into the function but before that pop it out of the array of siblings
-
+  siblingBeingSearched = siblings.pop()
+  return 
 
 };
 alice = {
@@ -23,6 +24,7 @@ Johnathan = {
   "element": false,
   "parent": "treeroot"
 }
+
 // root of a tree
 treeroot = {
   "children": ["Johnathan", "Khayo", "simple questions", "Llort"],
